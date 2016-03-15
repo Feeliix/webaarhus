@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+<div id="main-container">
+    <div id="main" class="wrapper clearfix">
+        <section>
+@Umbraco.RenderMacro("ShowMembers")       
+        </section>  
+    </div> <!-- #main -->
+</div> <!-- #main-container -->
