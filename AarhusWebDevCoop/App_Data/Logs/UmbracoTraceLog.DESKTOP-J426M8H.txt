@@ -1,0 +1,172 @@
+﻿ 2016-03-15 07:27:15,321 [P6752/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.3.7 application starting on DESKTOP-J426M8H
+ 2016-03-15 07:27:15,360 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-03-15 07:27:15,379 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 18ms)
+ 2016-03-15 07:27:15,485 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-03-15 07:27:15,724 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 238ms)
+ 2016-03-15 07:27:15,733 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-03-15 07:27:15,739 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 5ms)
+ 2016-03-15 07:27:15,739 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-03-15 07:27:15,745 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 5ms)
+ 2016-03-15 07:27:15,755 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-03-15 07:27:15,761 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 5ms)
+ 2016-03-15 07:27:15,761 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-03-15 07:27:15,766 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 5ms)
+ 2016-03-15 07:27:15,798 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-03-15 07:27:15,804 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 5ms)
+ 2016-03-15 07:27:15,805 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-03-15 07:27:15,810 [P6752/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 5ms)
+ 2016-03-15 07:27:30,806 [P6752/D2/T1] WARN  System.Data.IDbConnection - Configured database is reporting as not being available!. Exception: System.Data.SqlClient.SqlException (0x80131904): Der opstod en netværksrelateret eller forekomstspecifik fejl, da det blev forsøgt at oprette forbindelse til SQL Server. Serveren blev ikke fundet, eller der var ikke adgang til den. Kontroller, at forekomstnavnet er korrekt, og at SQL Server er konfigureret til at tillade fjernforbindelser. (provider: SQL Network Interfaces, error: 26 - Fejl ved søgning efter angivet server/forekomst.)
+   ved System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   ved System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   ved System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.Open()
+   ved Umbraco.Core.Persistence.DbConnectionExtensions.IsAvailable(IDbConnection connection)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+ 2016-03-15 07:27:30,806 [P6752/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = False
+ 2016-03-15 07:27:30,926 [P6752/D2/T1] WARN  System.Data.IDbConnection - Configured database is reporting as not being available!. Exception: System.Data.SqlClient.SqlException (0x80131904): Der opstod en netværksrelateret eller forekomstspecifik fejl, da det blev forsøgt at oprette forbindelse til SQL Server. Serveren blev ikke fundet, eller der var ikke adgang til den. Kontroller, at forekomstnavnet er korrekt, og at SQL Server er konfigureret til at tillade fjernforbindelser. (provider: SQL Network Interfaces, error: 26 - Fejl ved søgning efter angivet server/forekomst.)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.Open()
+   ved Umbraco.Core.Persistence.DbConnectionExtensions.IsAvailable(IDbConnection connection)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+ 2016-03-15 07:27:30,926 [P6752/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = False
+ 2016-03-15 07:27:31,928 [P6752/D2/T1] WARN  System.Data.IDbConnection - Configured database is reporting as not being available!. Exception: System.Data.SqlClient.SqlException (0x80131904): Der opstod en netværksrelateret eller forekomstspecifik fejl, da det blev forsøgt at oprette forbindelse til SQL Server. Serveren blev ikke fundet, eller der var ikke adgang til den. Kontroller, at forekomstnavnet er korrekt, og at SQL Server er konfigureret til at tillade fjernforbindelser. (provider: SQL Network Interfaces, error: 26 - Fejl ved søgning efter angivet server/forekomst.)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.Open()
+   ved Umbraco.Core.Persistence.DbConnectionExtensions.IsAvailable(IDbConnection connection)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+ 2016-03-15 07:27:31,928 [P6752/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = False
+ 2016-03-15 07:27:32,929 [P6752/D2/T1] WARN  System.Data.IDbConnection - Configured database is reporting as not being available!. Exception: System.Data.SqlClient.SqlException (0x80131904): Der opstod en netværksrelateret eller forekomstspecifik fejl, da det blev forsøgt at oprette forbindelse til SQL Server. Serveren blev ikke fundet, eller der var ikke adgang til den. Kontroller, at forekomstnavnet er korrekt, og at SQL Server er konfigureret til at tillade fjernforbindelser. (provider: SQL Network Interfaces, error: 26 - Fejl ved søgning efter angivet server/forekomst.)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.Open()
+   ved Umbraco.Core.Persistence.DbConnectionExtensions.IsAvailable(IDbConnection connection)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+ 2016-03-15 07:27:32,929 [P6752/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = False
+ 2016-03-15 07:27:33,930 [P6752/D2/T1] WARN  System.Data.IDbConnection - Configured database is reporting as not being available!. Exception: System.Data.SqlClient.SqlException (0x80131904): Der opstod en netværksrelateret eller forekomstspecifik fejl, da det blev forsøgt at oprette forbindelse til SQL Server. Serveren blev ikke fundet, eller der var ikke adgang til den. Kontroller, at forekomstnavnet er korrekt, og at SQL Server er konfigureret til at tillade fjernforbindelser. (provider: SQL Network Interfaces, error: 26 - Fejl ved søgning efter angivet server/forekomst.)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.Open()
+   ved Umbraco.Core.Persistence.DbConnectionExtensions.IsAvailable(IDbConnection connection)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+ 2016-03-15 07:27:33,930 [P6752/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = False
+ 2016-03-15 07:27:34,931 [P6752/D2/T1] WARN  System.Data.IDbConnection - Configured database is reporting as not being available!. Exception: System.Data.SqlClient.SqlException (0x80131904): Der opstod en netværksrelateret eller forekomstspecifik fejl, da det blev forsøgt at oprette forbindelse til SQL Server. Serveren blev ikke fundet, eller der var ikke adgang til den. Kontroller, at forekomstnavnet er korrekt, og at SQL Server er konfigureret til at tillade fjernforbindelser. (provider: SQL Network Interfaces, error: 26 - Fejl ved søgning efter angivet server/forekomst.)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.Open()
+   ved Umbraco.Core.Persistence.DbConnectionExtensions.IsAvailable(IDbConnection connection)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+ 2016-03-15 07:27:34,931 [P6752/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = False
+ 2016-03-15 07:27:50,470 [P6752/D2/T1] WARN  System.Data.IDbConnection - Configured database is reporting as not being available!. Exception: System.Data.SqlClient.SqlException (0x80131904): Der opstod en netværksrelateret eller forekomstspecifik fejl, da det blev forsøgt at oprette forbindelse til SQL Server. Serveren blev ikke fundet, eller der var ikke adgang til den. Kontroller, at forekomstnavnet er korrekt, og at SQL Server er konfigureret til at tillade fjernforbindelser. (provider: SQL Network Interfaces, error: 26 - Fejl ved søgning efter angivet server/forekomst.)
+   ved System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   ved System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   ved System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.Open()
+   ved Umbraco.Core.Persistence.DbConnectionExtensions.IsAvailable(IDbConnection connection)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+ 2016-03-15 07:27:50,470 [P6752/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = False
+ 2016-03-15 07:27:50,472 [P6752/D2/T1] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+Umbraco.Core.Exceptions.UmbracoStartupFailedException: Umbraco cannot start. A connection string is configured but the Umbraco cannot connect to the database.
+   ved Umbraco.Core.CoreBootManager.EnsureDatabaseConnection()
+   ved Umbraco.Core.CoreBootManager.Complete(Action`1 afterComplete)
+   ved Umbraco.Web.WebBootManager.Complete(Action`1 afterComplete)
+   ved Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e)
+   ved Umbraco.Core.UmbracoApplicationBase.Application_Start(Object sender, EventArgs e)
+ 2016-03-15 07:28:15,063 [P6752/D2/T14] ERROR UmbracoExamine.DataServices.UmbracoContentService - EXCEPTION OCCURRED reading GetAllUserPropertyNames
+System.Data.SqlClient.SqlException (0x80131904): Der opstod en netværksrelateret eller forekomstspecifik fejl, da det blev forsøgt at oprette forbindelse til SQL Server. Serveren blev ikke fundet, eller der var ikke adgang til den. Kontroller, at forekomstnavnet er korrekt, og at SQL Server er konfigureret til at tillade fjernforbindelser. (provider: SQL Network Interfaces, error: 26 - Fejl ved søgning efter angivet server/forekomst.)
+   ved System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   ved System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   ved System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   ved System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   ved System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   ved System.Data.SqlClient.SqlConnection.Open()
+   ved Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass1.<ExecuteAction>b__0()
+   ved Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   ved Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   ved Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   ved Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   ved Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   ved Umbraco.Core.Persistence.Database.<Query>d__7`1.MoveNext()
+   ved System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ved System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ved Umbraco.Core.Persistence.Database.Fetch[T](String sql, Object[] args)
+   ved UmbracoExamine.DataServices.UmbracoContentService.GetAllUserPropertyNames()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+ 2016-03-15 07:28:45,216 [P6752/D2/T12] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: InitializationError
+
+_shutDownMessage=Initialization Error
+HostingEnvironment initiated shutdown
+HostingEnvironment forårsagede nedlukning
+
+_shutDownStack=   ved System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   ved System.Environment.get_StackTrace()
+   ved System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   ved System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   ved System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   ved System.Web.HttpRuntime.AppDomainShutdownTimerCallback(Object state)
+   ved System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   ved System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   ved System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   ved System.Threading.TimerQueueTimer.CallCallback()
+   ved System.Threading.TimerQueueTimer.Fire()
+   ved System.Threading.TimerQueue.FireNextTimers()
+   ved System.Threading.TimerQueue.AppDomainTimerCallback()
