@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+
+@foreach (var page in Model.Children.Where("NodeTypeAlias == \"ProjectsMain\"").Where("Visible").OrderBy("CreateDate desc"))
+{ 
+
+                    <li><a href="@page.Url"> @page.Name</a></li>
+                     
+
+}
+
